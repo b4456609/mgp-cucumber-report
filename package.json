@@ -1,0 +1,16 @@
+{
+  "name": "mgp-cucumber-report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber-html-reporter": "^0.3.7",
+    "express": "^4.14.1",
+    "morgan": "^1.8.1"
+  }
+}
