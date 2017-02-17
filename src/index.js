@@ -14,11 +14,11 @@ app.get('/', function (req, res) {
   console.log(req.query.url);
   let stream = request
     .get(req.query.url)
-    .on('error', function (err) {
-      console.log(err)
-    })
     .pipe(fs.createWriteStream('build/cucumber.json'))
-
+  stream.on('error', function (err) {
+    console.log(err)
+    res.status(400).send('Bad Request');
+  })
   stream.on('finish', function () {
     console.log("The file was saved!");
     const options = {
