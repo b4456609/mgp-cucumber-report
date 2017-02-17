@@ -36,5 +36,5 @@ app.get('/', function (req, res) {
 
 })
 
-app.listen(3012);
+app.listen(3010);
 console.log("The port listen on 3010");
